@@ -1,0 +1,25 @@
+{
+  "modules": [
+    {
+      "name": "login",
+      "components": [
+        {
+          "path": "",
+          "name": "login"
+        }
+      ]
+    },
+    {
+      "name": "dashboard",
+      "components": [
+        {
+          "path": "",
+          "name": "dashboard"
+        }
+      ]
+    },
+    {
+      "name": "lazyLoader"
+    }
+  ]
+}
