@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LazyLoaderModule } from './modules/lazy-loader/lazy-loader.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { LazyLoaderModule } from './modules/lazy-loader/lazy-loader.module';
   ],
   imports: [
     BrowserModule,
-    LazyLoaderModule
+    LazyLoaderModule,
+    HttpClientModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
