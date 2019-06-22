@@ -6,6 +6,7 @@ import { LazyLoaderModule } from './modules/lazy-loader/lazy-loader.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {SessionStorage} from './core/common/session.storage';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ToastrModule.forRoot(),
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    SessionStorage
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
