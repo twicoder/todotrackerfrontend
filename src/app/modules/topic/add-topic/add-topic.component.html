@@ -1,3 +1,9 @@
-<p>
-  add-topic works!
-</p>
+<button (click)="goBack()">Go Back</button>
+<form>
+  <label>Name:</label>
+  <input name="topicname" [(ngModel)]="newTopic.name" />
+  <label>Description</label>
+  <input name="topicdescription" [(ngModel)]="newTopic.description" />
+
+  <button (click)="addTopic()">Add Topic</button>
+</form>
