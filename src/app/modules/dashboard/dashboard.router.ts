@@ -13,6 +13,9 @@ const routes: Routes = [
       {
         path: 'knowledge', loadChildren: '../knowledge/knowledge.module#KnowledgeModule'
       },
+      {
+        path: 'learningresource', loadChildren: '../learningresource/learningresource.module#LearningresourceModule'
+      },
       { path: '**', redirectTo: 'topic' }
     ]
   }];
