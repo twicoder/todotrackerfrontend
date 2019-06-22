@@ -10,6 +10,9 @@ const routes: Routes = [
       {
         path: 'topic', loadChildren: '../topic/topic.module#TopicModule'
       },
+      {
+        path: 'knowledge', loadChildren: '../knowledge/knowledge.module#KnowledgeModule'
+      },
       { path: '**', redirectTo: 'topic' }
     ]
   }];
